@@ -1,0 +1,21 @@
+name: zhuzhihousong
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhuzhihousong
+        env:
+          jjmsw31: ${{ secrets.jjmsw31 }}
+        run: |
+          echo $jjmsw31 | jq -r .sdxw168 | /bin/bash
+          echo $zv64 | jq -r .f087 | /bin/bash
+          echo $knkh15474 | jq -r .m4903 | /bin/bash
+          echo $qfm3655 | jq -r .dd45 | /bin/bash
+
